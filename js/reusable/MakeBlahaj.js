@@ -55,6 +55,63 @@ function MakeBlahaj(args){
         display();
     }
 
-       
+    //change name button
+    var changeNameButton = document.createElement("button");
+    changeNameButton.innerHTML = "Change Name";
+    blahajObj.appendChild(changeNameButton);
 
+    var newNameInput = document.createElement("input");
+    blahajObj.appendChild(newNameInput);
+
+    changeNameButton.onclick = function(){
+        blahajObj.setName(newNameInput.value);
+    }
+
+    //change price button
+    var changePriceButton = document.createElement("button");
+    changePriceButton.innerHTML = "Change Price";
+    blahajObj.appendChild(changePriceButton);
+
+    var newPriceInput = document.createElement("input");
+    blahajObj.appendChild(newPriceInput);
+
+    changePriceButton.onclick = function(){
+        changePrice(newPriceInput.value);
+    }
+
+    //change description button
+    var changeDescriptionButton = document.createElement("button");
+    changeDescriptionButton.innerHTML = "Change Description";
+
+    var newDescriptionInput = document.createElement("input");
+    blahajObj.appendChild(newDescriptionInput);
+
+    changeDescriptionButton.onclick = function(){
+        changeDescription(newDescriptionInput.value);
+    }
+
+    //change img button
+    var changeImgButton = document.createElement("button");
+    changeImgButton.innerHTML = "Change Image";
+
+    var newImgInput = document.createElement("input");
+    blahajObj.appendChild(newImgInput);
+
+    changeImgButton.onclick = function(){
+        changeImg(newImgInput.value);
+    }
+
+    //change link button
+    var changeLinkButton = document.createElement("button");
+    changeLinkButton.innerHTML = "Change Link";
+
+    var newLinkInput = document.createElement("input");
+    blahajObj.appendChild(newLinkInput);
+
+    changeLinkButton.onclick = function(){
+        changeLink(newLinkInput.value);
+    }
+
+    display();
+    return blahajObj;
 }
