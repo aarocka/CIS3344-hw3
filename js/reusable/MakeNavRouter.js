@@ -1,4 +1,4 @@
-
+"use strict";
 // Function MakeNavRouter expects to be passed a parameter object with the properties
 // as listed in the function signature: // (navId, navList, contentId, startLink, NavRouterClass. 
 // However, if any of the last three properties are not supplied, (e.g., contentId, startLink, 

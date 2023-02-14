@@ -1,10 +1,21 @@
+"use strict";
 function blahajContent() {
+
+
     // Do something
     var stuffie1 = MakeBlahaj({
+        //PK
+        productID: 1,
+        //Nullable
+        productLength: 3.14,
+        productWidth: 3.14,
+        productHeight: 3.14,
+        productWeight: 3.14,
+        //end Nullable
         name: "Stuffie1",
         price: "$10.00",
         description: "A stuffie",
-        img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FStuffies-Pl",
+        img: "https://www.ikea.com/us/en/images/products/blahaj-soft-toy-shark__0710175_pe727378_s5.jpg?f=xl",
         link: "https://www.google.com"
     });
 
@@ -12,7 +23,7 @@ function blahajContent() {
         name: "Stuffie2",
         price: "$10.00",
         description: "A stuffie",
-        img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FStuffies-Pl",
+        img: "https://www.ikea.com/us/en/images/products/blahaj-soft-toy-shark__0710175_pe727378_s5.jpg?f=xl",
         link: "https://www.google.com"
     });
 
@@ -20,11 +31,22 @@ function blahajContent() {
         name: "Shark Towel",
         price: "$10.00",
         description: "A stuffie",
-        img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FStuffies-Pl",
+        img: "https://www.ikea.com/us/en/images/products/blavingad-towel-with-hood-shark-shaped-blue-gray__1088001_pe860992_s5.jpg?f=xl",
         link: "https://www.google.com"
     });
 
-    document.getElementById("blahajContent").appendChild(stuffie1);
-    document.getElementById("blahajContent").appendChild(stuffie2);
-    document.getElementById("blahajContent").appendChild(stuffie3);
+    var ele = document.createElement("div");
+    
+    /*
+    var objContainer = document.createElement("div");
+    objContainer.classList.add('flexContainer'); // see styling in this file, above...
+    ele.appendChild(objContainer);
+    objContainer.appendChild(stuffie1);
+    objContainer.appendChild(stuffie2);
+    objContainer.appendChild(stuffie3);
+    */
+    ele.appendChild(stuffie1);
+    ele.appendChild(stuffie2);
+    ele.appendChild(stuffie3);
+    return ele;
 }
