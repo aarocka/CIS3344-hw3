@@ -1,0 +1,14 @@
+.blahajObj {
+    background-color: lightgray;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    margin: 1rem;
+}
+
+.blahajObj img {
+    width: 80%;
+    height: auto;
+}
+.blahaj button {
+    background-color:lightblue;
+}

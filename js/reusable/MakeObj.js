@@ -1,3 +1,4 @@
+"use strict";
 function MakeObj (title, imgFile, text) {
 
     var ele = document.createElement("div");

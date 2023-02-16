@@ -1,8 +1,20 @@
+"use strict";
 function blogContent() {
 
     // ` this is a "back tick". Use it to define multi-line strings in JavaScript.
     var content = ` 
-      <h4>My Blog</h4>
+      <h1>My Blasdfjhoaksjdlk.fjalskjdlkfjig</h1>
+      <h2>JSObj homnework entry</h2>
+        <p>
+            Loerm ipusm dolor sit amet, consectetur adipiscing elit. Sed euismod,
+            nisl nec tincidunt luctus, nisl nisl aliquet nisl, nec aliquet nisl
+            nisl sit amet nisl. Sed euismod, nisl nec tincidunt luctus, nisl nisl
+            aliquet nisl, nec aliquet nisl nisl sit amet nisl. Sed euismod, nisl
+            nec tincidunt luctus, nisl nisl aliquet nisl, nec aliquet nisl nisl
+        </p>    
+      </br>
+      </br>
+      <h2>Previous work entry</h2>
       <p>
         This is my blog about some really great photos of blahaj.
       </p>

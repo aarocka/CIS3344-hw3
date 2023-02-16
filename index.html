@@ -11,23 +11,25 @@
         <link href="style/main.css" rel="stylesheet" type="text/css" />  
         <link href="style/NavRouter.css" rel="stylesheet" type="text/css" />  
         <link href="style/obj.css" rel="stylesheet" type="text/css" />  
+        <link href="blahaj.css" rel="stylesheet" type="text/css" />
 
         <style>
 
 
         </style>
 
-        <script>
-            "use strict"
-        </script>
+
     </head>
     <body>
         <div id="titleNav">
             <div id="title">
-                Blahaj appreciation station
+                Stuffed shark appreciation station
             </div>
             <div id="nav">
-
+                <!-- HTML comment: 
+                    The nav div is empty. It will get content "injected into it"
+                    by the NavRouter component.
+                -->
             </div>
         </div>
         <div id="content">
@@ -51,7 +53,10 @@
         <script src="js/content/homeContent.js"></script>
         <script src="js/content/objContent.js"></script>
 
+        <script src="js/reusable/MakeBlahaj.js"></script>
+        <script src="js/content/blahajContent.js"></script>
         <script>
+            "use strict";
             // Home | Account | Search | Tutorial | Blog
 
             var myNavList = [
@@ -76,7 +81,7 @@
                 {
                     header: "Search",
                     subMenu: [
-                        {linkText: "Objects", linkURL: "#/objects", action: objContent},
+                        {linkText: "Objects", linkURL: "#/objects", action: blahajContent},
                         {linkText: "Slide Show"},
                         {linkText: "Click Sort"}
                     ]
